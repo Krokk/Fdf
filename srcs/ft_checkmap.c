@@ -6,7 +6,6 @@
 /*   By: rfabre <rfabre@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/09 10:09:09 by rfabre            #+#    #+#             */
-/*   Updated: 2017/03/16 20:34:37 by rfabre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +17,10 @@ void			ft_printerror(int i)
 		ft_putendl_fd("Map missing", 2);
 	if (i == -2)
 		ft_putendl_fd("Invalid map ;(", 2);
+	if (i == -3)
+		ft_putendl_fd("Wrong color code ;O", 2);
+	if (i == -42)
+		ft_putendl_fd("Malloc error ;X", 2);
 	exit(-1);
 }
 
